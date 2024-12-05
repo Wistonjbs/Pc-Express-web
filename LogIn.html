@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BetaNotes/LogIng</title>
+    <link rel="icon" href="Img/Icons_img/Icon_default.png">
+    <link rel="stylesheet" href="Style.css">
+
+</head>
+<body class="LogIn">
+        <div class="Forms_organiserBox">
+            
+            <form action="/Loging" method="post" class="forms">
+
+                <h2>Iniciar Sesión</h2>
+                
+                <div class="box">
+
+                    <div class="email">
+                        <label for="email">E-mail</label> 
+                        <input type="text" name="email" id="email" class="txtArea" required ><br><br>
+                    </div>
+                    
+                    <div class="password">
+                        <label for="password">Contraseña</label>
+                        <input type="text" name="password" id="password" class="txtArea" required><br><br>
+                       
+                    </div>
+                    
+                    <div class="remindme">
+                        <input type="checkbox" name="remind me" id="remind me" class="checkbox">
+                        <label for="checkbox">Recordarme</label>
+                        <label for=""> <a class="textDecoration" href="CreateAccount.html"> ¿Olvidó contraseña?</a> </label>
+                    </div>
+                 
+                </div>
+                
+                <input type="submit" value="Log in" class="bttn">
+                
+                <label for=""> ¿No tiene cuenta? <a class="textDecoration" href="CreateAccount.html">Crea una</a> </label>
+            </form>
+            
+        </div>
+</body>
+</html>

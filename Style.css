@@ -1,0 +1,434 @@
+* {
+    font-family: "Lexend", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;   
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(Img/backgrounds_img/Background_section2.png);
+    background-size: cover;
+}
+h3{
+    font-weight: 700;
+    font-size: 2rem;
+    margin: 2%;
+    
+
+}
+.Index, .CreateAccount, .LogIn, .case{
+    background-image: url(Img/backgrounds_img/Background_default.png);
+    height: 100vh;
+    overflow: hidden;
+    background-size:cover ; 
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    background-color: #1E3259;
+    padding: 16px 20px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.navbar__nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+.navbar__nav__icon  {
+    width: 30px;
+    height: 30px;
+}
+.navbar__nav__list {
+    display: flex;
+    gap: 25px;
+    flex-direction: row;
+}
+.organiser_box{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 100px 100px
+}
+.txt_tittle h1{
+    margin-top: -30px;
+    font-size: 143px;
+    font-weight: 700;
+}
+.txt_tittle h2{
+    margin-bottom: -25px;
+    font-size: 60px;
+    margin-top: 30px;
+}    
+.txt_bttn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    justify-content: space-between;
+}
+.txt_bttn h3{
+    margin: 10px;
+}
+.bttn{
+    font-weight: 500;
+    width: 200px;
+    font-size: 16px;
+    background-color: transparent;
+    border-color: #f2f2f2;
+    border: 4px solid; 
+    border-radius: 30px;
+    padding: 15px 30px;
+    margin: 5px;
+}
+.bttn:hover{
+    font-weight: 600;
+    width: 210px;
+    font-size: 16px;
+    background-color: transparent;
+    border-color: #f2f2f26a;
+}
+.Forms_organiserBox, .box_case{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.Menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.Menu_ensamblaje{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid #f2f2f286;
+    border-radius: 10px;
+    box-shadow: 0px 0px 25px #222;
+    backdrop-filter: blur(20px); 
+    gap: 40px;
+    height: 90%;
+    width: 95%;
+}
+
+.box_ficha_buscador{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #f2f2f2e8;
+    border-radius: 5px;
+    padding: 20px;
+    gap: 10px;
+    text-align: justify;
+    width: 25%;
+    height: 90%;
+}
+
+
+
+.ensamblado{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #f2f2f2e8;
+    border-radius: 5px;
+    width: 40%;
+    height: 95%;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 30PX;
+}
+
+.caja_componentes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 19px;
+    padding: 3px, 10px;
+}
+
+.box_txt h2, .ensamblado h2, .box_ficha_buscador h2 {
+    font-size: 20px;
+    font-weight: 700;
+
+}
+.box_txt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+.box_organizadora{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 5px solid #f2f2f286;
+    border-radius: 10px;
+    padding: 34px;
+    text-align: center;
+    box-shadow: 0px 0px 25px #222;
+    backdrop-filter: blur(20px); 
+    height: 65%;
+    width: 70%;
+}
+.forms{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 5px solid #f2f2f286;
+    border-radius: 10px;
+    padding: 34px;
+    text-align: center;
+    box-shadow: 0px 0px 25px #222;
+    backdrop-filter: blur(20px); 
+    height: 65%;
+    width: 30%;
+}
+.forms h2, .box_organizadora h2{
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: end;
+    align-items: center;
+}
+.email, .password, .remindme, .username, .confirmpassword{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: end;
+    align-items: center;
+    width: fit-content;
+    margin: 7px;
+    gap: 15px;
+}
+
+.label{
+    justify-content: end;
+    font-weight: 570;
+}
+.textDecoration{
+    text-decoration: underline;
+    color: #d4d4d4;;
+}
+.txtArea{
+    background-color: transparent;
+    border: 3px solid;
+    border-radius: 20px;
+    width: 250px;
+    height: 35px;
+    display: flex;
+    justify-content: end;
+}
+.checkbox{
+    height: 15px;
+    width: 15px;
+    background-color: transparent;
+    border: 2px solid #f2f2f2 ;
+    border-radius: 5px;
+}
+.Section_jumbotron{
+    background-image: url(Img/backgrounds_img/Background_default.png);
+    background-size:cover ; 
+    background-repeat: no-repeat;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+.Cases{
+    display: flex;
+    flex-direction: row;
+    margin-top: -15px;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+.Section_pre-ensamblados{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10%;
+    padding-bottom: 15%;
+}
+
+.slider{
+    margin-top: 10%;
+    position: relative;
+    width: 100%;
+    height: 450px;
+}
+.item{
+    position: absolute;
+    width: 300px;
+    height: 450px;
+    text-align: center;
+    background-color: #000000fb;
+    border-radius: 10px;
+    border: 3px solid #f2f2f28f;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    left: calc(50% - 110px);
+}
+.item_img{
+    height: fit-content;
+    width: fit-content;
+    margin-top: 6%;
+}
+#next, #prev{
+    position: absolute;
+    top: 40%;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    font-size: xxx-large;
+    font-family: monospace;
+    font-weight: bold;
+    left: 400px;
+}
+#next{
+    left: unset;
+    right: 400px;
+}
+
+.Somos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(Img/backgrounds_img/Background_section3.png);
+    background-size: cover;
+    padding:  150px 0px;
+    gap: 62px;
+}
+.txt{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 52px;
+}
+.txt h2{
+    font-size: 45px;
+    font-weight: 700;
+}
+.txt p{
+    font-size: 24px;
+    font-weight: 500;
+}
+.box_sponsors{
+    background-color: #00000052;
+    display: flex;
+    width: 100%;
+    height: 500px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 10px;
+
+}
+.logos{
+    display: flex;
+    flex-direction: row;
+    gap:100px;
+    height: min-content;
+    width: min-content;
+}
+
+.Aliados{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.organizador{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 200px;
+
+}
+.container{
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    height: 500px;
+    perspective: 800px;
+}
+.card{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1500ms;
+}
+.container:hover > .card{
+    cursor: pointer;
+    transform: rotateY(180deg);
+   
+}
+.front, .back{
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 0 5px 2px rgb(50, 50, 50, 0.25);
+    position: absolute;
+    object-fit: cover;
+    backface-visibility: hidden;
+    border-radius: 10px
+}
+
+
+.back{
+    background-color: #0d0c0cb2;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 10px 20px;
+}
+.footerbar {
+    background-color: #1E3259;
+    padding: 40px 20px;
+}
+.footerbar__nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

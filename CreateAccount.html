@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PCexpress/CreateAccount</title>
+    <link rel="icon" href="Img/Icons_img/Icon_default.png">
+    <link rel="stylesheet" href="Style.css">
+
+</head>
+<body class="CreateAccount">
+    
+    
+    <div class="Forms_organiserBox">
+        
+        <form id="registrationForm" action="/submit" method="post" class="forms">
+
+            <h2>Crear Cuenta</h2>
+            
+            <div class="box">
+            
+                <div class="email">
+                    <label for="email" class="label">E-mail</label>
+                    <input type="text" name="email" id="email" class="txtArea" required> <br><br>
+                </div>
+
+                <div class="username">
+                    <label for="username" class="label">Usuario</label>
+                    <input type="text" name="username" id="username" class="txtArea" required> <br><br>
+                </div>
+                
+                <div class="password">
+                    <label for="password" class="label">Contraseña</label>
+                    <input type="text" name="password" id="password" class="txtArea"> <br><br>
+                </div>
+                
+                <div class="confirmpassword">    
+                    <label for="confirmpassword" class="label">Confirmar contraseña</label>
+                    <input type="text" name="confirmpassword" id="confirmpassword" class="txtArea" required> <br><br>
+                </div>
+            
+            </div>
+
+            <input type="submit" class="bttn" value="Crear">
+
+        </form>
+
+        <script>
+            document.getElementById('registrationForm').addEventListener('submit', function(event) {
+                var password = document.getElementById('password').value;
+                var confirmPassword = document.getElementById('confirmpassword').value;
+                if (password !== confirmPassword) {
+                    alert('Passwords are incorrect');
+                    event.preventDefault();}
+            });
+
+        </script>
+    </div>
+</body>
+</html>
